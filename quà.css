@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffeef5;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.crad2{
+    width: 800px;
+    height: 240px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgb(254, 0, 0);
+    padding-left: 260px;
+    padding-bottom: 90px;
+    padding-top: 60px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    animation: 'float' 3s ease-in-out infinite;
+}
+.card{
+    width: 500px;
+    height: 240px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgb(255, 89, 89);
+    padding: 20px;
+    text-align: center;
+}
+.card h2{
+    color: #f752b5;
+    margin: 10px 0;
+    font-size: 26px;
+}
+.card p{
+    color: #444;
+    font-size: 15px;
+    margin: 5px 0 15px;
+}
+.family{
+    display: inline-block;
+    background: #ff6fae;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 'background' 0,3s;
+}
+.family:hover{
+    background: #ff4f94;
+}
+.heart{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #ff6fae;
+    transform: rotate(45deg);
+    animation: rise 6s infinite ease-in;
+    bottom: -40px;
+    left: 5%;
+    animation-delay: 1s;
+}
+.heart::before,
+.heart::after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #ff6fae;
+    border-radius: 50%;
+    position: absolute;
+}
+.heart::before{top: -9px; left: 0;}
+.heart::after{left: -9px; top: 0;}
+.heart:nth-child(1){left: 100%; bottom: -40px; animation-delay: 1s;}
+.heart:nth-child(2){left: 10%; bottom: -40px; animation-delay: 2s;}
+.heart:nth-child(3){left: 15%; bottom: -40px; animation-delay: 3s;}
+.heart:nth-child(4){left: 20%; bottom: -40px; animation-delay: 4s;}
+.heart:nth-child(5){left: 25%; bottom: -40px; animation-delay: 5s;}
+.heart:nth-child(6){left: 30%; bottom: -40px; animation-delay: 6s;}
+.heart:nth-child(7){left: 35%; bottom: -40px; animation-delay: 7s;}
+.heart:nth-child(8){left: 40%; bottom: -40px; animation-delay: 8s;}
+.heart:nth-child(9){left: 45%; bottom: -40px; animation-delay: 9s;}
+.heart:nth-child(10){left: 50%; bottom: -40px; animation-delay: 10s;}
+.heart:nth-child(11){left: 55%; bottom: -40px; animation-delay: 11s;}
+.heart:nth-child(12){left: 60%; bottom: -40px; animation-delay: 12s;}
+.heart:nth-child(13){left: 65%; bottom: -40px; animation-delay: 13s;}
+.heart:nth-child(14){left: 70%; bottom: -40px; animation-delay: 14s;}
+.heart:nth-child(15){left: 75%; bottom: -40px; animation-delay: 15s;}
+.heart:nth-child(16){left: 80%; bottom: -40px; animation-delay: 16s;}
+.heart:nth-child(17){left: 85%; bottom: -40px; animation-delay: 17s;}
+.heart:nth-child(18){left: 90%; bottom: -40px; animation-delay: 18s;}
+.heart:nth-child(19){left: 95%; bottom: -40px; animation-delay: 19s;}
+.heart:nth-child(22){left: 10%; bottom: -60px; animation-delay: 22s;}
+.heart:nth-child(23){left: 15%; bottom: -60px; animation-delay: 23s;}
+.heart:nth-child(24){left: 20%; bottom: -60px; animation-delay: 24s;}
+.heart:nth-child(25){left: 25%; bottom: -60px; animation-delay: 25s;}
+.heart:nth-child(26){left: 30%; bottom: -60px; animation-delay: 26s;}
+.heart:nth-child(27){left: 35%; bottom: -60px; animation-delay: 27s;}
+.heart:nth-child(28){left: 40%; bottom: -60px; animation-delay: 28s;}
+.heart:nth-child(29){left: 45%; bottom: -60px; animation-delay: 29s;}
+.heart:nth-child(30){left: 50%; bottom: -60px; animation-delay: 30s;}
+.heart:nth-child(31){left: 55%; bottom: -60px; animation-delay: 31s;}
+.heart:nth-child(32){left: 60%; bottom: -60px; animation-delay: 32s;}
+.heart:nth-child(33){left: 65%; bottom: -60px; animation-delay: 33s;}
+.heart:nth-child(34){left: 70%; bottom: -60px; animation-delay: 34s;}
+.heart:nth-child(35){left: 75%; bottom: -60px; animation-delay: 35s;}
+.heart:nth-child(36){left: 80%; bottom: -60px; animation-delay: 36s;}
+.heart:nth-child(37){left: 85%; bottom: -60px; animation-delay: 37s;}
+.heart:nth-child(38){left: 90%; bottom: -60px; animation-delay: 38s;}
+.heart:nth-child(39){left: 95%; bottom: -60px; animation-delay: 39s;}
+@keyframes rise{
+    0%{transform: translateY(0) rotate(450deg); opacity: 0.9;}
+    100%{transform: translateY(-600px) rotate(45deg); opacity: 0;}
+}
+@keyframes float{
+    0%, 100%{transform: translateY(0);}
+    50%{transform: translateY(-8px);}
+}
